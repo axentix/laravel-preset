@@ -1,0 +1,34 @@
+{
+    "name": "axentix/laravel-preset",
+    "description": "A Laravel frontend preset for Axentix",
+    "keywords": [
+        "laravel",
+        "preset",
+        "axentix",
+        "ui",
+        "laravel ui"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Axentix Team",
+            "homepage": "https://useaxentix.com/"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^7.0",
+        "laravel/ui": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Axentix\\AxentixPreset\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Axentix\\LaravelPreset\\AxentixPresetServiceProvider"
+            ]
+        }
+    }
+}
