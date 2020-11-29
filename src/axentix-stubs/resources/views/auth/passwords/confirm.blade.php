@@ -16,7 +16,7 @@
                         <label for="password">{{ __('Password') }}</label>
                         <input type="password" name="password" id="password" class="form-control" required autocomplete="new-password">
                         @error('password')
-                        <p class="txt-center form-helper error">
+                        <p class="txt-center form-helper txt-red">
                             {{ $message }}
                         </p>
                         @enderror

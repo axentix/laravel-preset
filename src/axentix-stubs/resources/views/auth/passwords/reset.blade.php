@@ -15,7 +15,7 @@
                             <label for="email">{{ __('E-Mail Address') }}</label>
                             <input type="email" name="email" id="email" class="form-control" value="{{ old('email') }}" required autocomplete="email" autofocus>
                             @error('email')
-                            <p class="txt-center form-helper error">
+                            <p class="txt-center form-helper txt-red">
                                 {{ $message }}
                             </p>
                             @enderror
@@ -25,7 +25,7 @@
                             <label for="password">{{ __('Password') }}</label>
                             <input type="password" name="password" id="password" class="form-control" required autocomplete="new-password">
                             @error('password')
-                            <p class="txt-center form-helper error">
+                            <p class="txt-center form-helper txt-red">
                                 {{ $message }}
                             </p>
                             @enderror
