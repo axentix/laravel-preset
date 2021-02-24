@@ -12,7 +12,7 @@ use Symfony\Component\Finder\SplFileInfo;
 class AxentixPreset extends Preset
 {
     const NPM_PACKAGES_TO_ADD = [
-        'axentix' => '^1.0.0'
+        'axentix' => '^1.1.0'
     ];
 
     const NPM_PACKAGES_TO_REMOVE = [
