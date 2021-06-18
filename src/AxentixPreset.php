@@ -105,7 +105,11 @@ class AxentixPreset extends Preset
 
         file_put_contents(
             base_path('routes/web.php'),
-            "Auth::routes();\n\nRoute::get('/home', 'HomeController@index')->name('home');\n\n",
+            "
+                use App\Http\Controllers\HomeController;\n
+                use Illuminate\Support\Facades\Auth;\n
+                Auth::routes();\n\nRoute::get('/home', [HomeController::class, 'index'])->name('home');\n\n
+            ",
             FILE_APPEND
         );
 
